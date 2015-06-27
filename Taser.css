@@ -27,15 +27,19 @@ body, html {
 	position:absolute;
 	left: 175px;
 	height:25px;
-	left:350px;
-	top: 12px;
-	text-align:left;
+	left:250px;
+	top: 15px;
+	text-align:center;
 	list-style : outside none none;
 	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 	list-style:none;
 	margin:0;
 	padding:0;
+}
+
+#contact{
+	word-wrap:word-break;
 }
 #tab-menu {
    display:block;
@@ -124,36 +128,85 @@ ul #ReportProblem{
 #sidebar a{
 	margin-left: 20px;	
 }
-#body-content a{
+#body-content .nametext{
 	color:#297ACC;
 }
 
-a.tooltip{
-	outline: medium none;
-	outline-width: medium;
-	outline-style: none;
-	outline-color: -moz-use-text-color;
-	
-	text-decoration: none;
-	text-decoration-color: -moz-use-text-color;
-	text-decoration-line: none;
-	text-decoration-style: solid;
-	
-	border-bottom: 1px dotted #00F;
-    border-bottom-color: #00F;
-	position: relative;
-	
+a.tooltip {
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    color:#297ACC;
 }
 
-a.tooltip: hover{
-visibility: visible;
+/*a.tooltip strong {
+    line-height: 30px;
+} */
+
+a.tooltip > span {
+    width: 90px;
+    height : 110px;
+    padding: 10px 20px;
+    margin-top: 0;
+    margin-left: -120px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    position: absolute;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #999;
+    -webkit-transition-property: opacity, margin-top, visibility, margin-left;
+    -webkit-transition-duration: 0.4s, 0.3s, 0.4s, 0.3s;
+    -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-property: opacity, margin-top, visibility, margin-left;
+    transition-duration: 0.4s, 0.3s, 0.4s, 0.3s;
+    transition-timing-function: 
+        ease-in-out, ease-in-out, ease-in-out, ease-in-out;
 }
 
-.tooltip{
-	color: #069;
+/*a.tooltip > span:hover,*/
+a.tooltip:hover > span {
+    opacity: 1;
+    text-decoration: none;
+    visibility: visible;
+    overflow: visible;
+    margin-top: 50px;
+    display: inline;
+    margin-left: -90px;
 }
 
-*, *::before, *::after{
-	box-sizing: border-box;
-}
+a.tooltip span b {
+    width: 15px;
+    height: 15px;
+    margin-left: 40px;
+    margin-top: -19px;
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-box-shadow: inset -1px 1px 0 #fff;
+    -moz-box-shadow: inset 0 1px 0 #fff;
+    -o-box-shadow: inset 0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff;
+    display: none\0/;
+    *display: none;
+}    
 
+a.tooltip > span {
+	color: #000000; 
+	background: #FFFFFF;
+	background: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF);
+	background: linear-gradient(top, #FFFFFF, #FFFFFF);	    
+	border: 5px solid #AAAAAA;	     
+}    
+	  
+a.tooltip span b {
+	background: #FFFFFF;
+	border-top: 2px solid #BBBBBB;
+	border-right: 2px solid #BBBBBB;
+}
