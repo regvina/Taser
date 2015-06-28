@@ -197,9 +197,6 @@ a.tooltip span b {
 	border-right: 2px solid #BBBBBB;
 }
 
-ul.department{
-	list-style : outside none none;
-}
 
 a.nametext{
 	border: 1px #AAAAAA;
@@ -210,4 +207,14 @@ a.nametext{
 	top: 50%;
     left: 50%;
     margin-right: -50%;	
+}
+
+ul#TabMenu li {
+	display:block;
+  float: left;
+}
+
+li#ReportProblem.Tab{
+float:right !important;
+margin-right:5%;
 }

@@ -60,3 +60,7 @@ ul li .Tab:hover {
 	margin-top:10%;
 	
 }
+ul#TabMenu li {
+	display:block;
+  float: left;
+}
