@@ -3,12 +3,26 @@
 body, html {
   height: 100%;
   min-height:100%;
+  font-family:Tahoma, Geneva, sans-serif;
+  font-weight:normal;
+}
+h1{
+	font-size:250%;
+	font-weight: lighter;
+}
+
+h2{
+	font-weight: lighter;
+}
+
+h3{
+	font-weight: lighter;
 }
 .global-header{
 	color: #FFF !important;
-    line-height: 100px;
+    line-height: 50px;
 	height: 50px;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	width: 100%;
 	left: 0px;
@@ -22,51 +36,36 @@ body, html {
 }
 
 #TabMenu {
-	clear:left;
-	float:left;
+    float:left;
 	position:absolute;
 	left: 175px;
 	height:25px;
-	left:250px;
-	top: 15px;
+	top: 12px;
 	text-align:center;
-	list-style : outside none none;
+	/*list-style : outside none none; */
 	font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
 	list-style:none;
 	margin:0;
 	padding:0;
 }
 
-#contact{
-	word-wrap:word-break;
+ul{
+	list-style-type:none;
 }
-#tab-menu {
-   display:block;
-   float:left;
-   list-style:none;
-   margin:0;
-   padding:0;
-   height:25px;
-   position:relative;
-   right:50%;
-}
-ul li a {
+
+ul li .Tab {
+	float:left !important;
 	display:block;
 	margin:0 0 0 1px;
 	padding:3px 10px;
 	text-decoration:none;
 	line-height:normal;
 }
-ul li a:hover {
+ul li .Tab:hover {
    background-color:#00002E;
    border-radius: 10px;
 }
 
-ul #ReportProblem{
-	float: right !important;
-	margin-right: 25px;
-}
 
 #body-content{
 	margin-top: 70px;
@@ -86,7 +85,6 @@ ul #ReportProblem{
 	width: 200px;
 	float: left;
 	height: 100%;
-	/*padding: 5px 15px; */
 }
 
 #middle {
@@ -100,34 +98,23 @@ ul #ReportProblem{
 	margin-right: 40px;
 	width: 535px; 
 	float:left;
-	/*padding: 5px 15px; */
 	margin: 0px 5px 5px 5px;
 }
 
-#sidebar {
+#sidebar{
 	height: 100%;
 	background-color:#F2F2F2;
 	-webkit-column-count: 1;
     -moz-column-count: 1;   
-   /* -moz-column-gap: 3%;  FF3.5+ */
     column-count: 1;        
-   /* column-gap: 20px; */
 	width: 495px;
+	margin-left: 20px;
 	margin-right:0px;
 	margin-top:0px;
 	margin-bottom:0px;
-	/*padding: 5px 15px; */
 	float: right;
 }
 
-#sidebar h2{
-	margin-left: 20px;
-	line-height: 1px;
-}
-
-#sidebar a{
-	margin-left: 20px;	
-}
 #body-content .nametext{
 	color:#297ACC;
 }
@@ -153,7 +140,6 @@ a.tooltip > span {
     visibility: hidden;
     z-index: 10;
     position: absolute;
-    font-family: Arial;
     font-size: 12px;
     font-style: normal;
     border-radius: 3px;
@@ -209,4 +195,19 @@ a.tooltip span b {
 	background: #FFFFFF;
 	border-top: 2px solid #BBBBBB;
 	border-right: 2px solid #BBBBBB;
+}
+
+ul.department{
+	list-style : outside none none;
+}
+
+a.nametext{
+	border: 1px #AAAAAA;
+	border-radius: 5px;
+}
+
+.DisplayPic{
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;	
 }
